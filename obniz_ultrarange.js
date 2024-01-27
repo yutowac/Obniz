@@ -1,5 +1,5 @@
 const Obniz = require('obniz');
-const obniz = new Obniz('7766-3327'); // Obniz_IDに自分のIDを入れます
+const obniz = new Obniz('Obniz_ID'); // Obniz_IDに自分のIDを入れます
 
 obniz.onconnect = async function () {
   // 超音波測距センサを利用する
