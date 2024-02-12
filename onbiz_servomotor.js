@@ -26,24 +26,6 @@ obniz.onconnect = async function () {
   // スイッチの反応を常時監視
   // 「スイッチ状態が変化した瞬間に1回だけ実行される」ことに注意しましょう
   obniz.switch.onchange = async function (state) {
-    // スイッチの状態で角度を決め、最後に動かします
-    // if (state === 'push') {
-    //   // スイッチが押されている状態
-    //   console.log('pushed');
-    //   degrees = 45.0;
-    // } else if (state === 'right') {
-    //   // 右にスイッチを倒したとき
-    //   console.log('right');
-    //   degrees = 0.0;
-    // } else if (state === 'left') {
-    //   // 左にスイッチを倒したとき
-    //   console.log('left');
-    //   degrees = 180.0;
-    // } else {
-    //   // スイッチが押されていない状態
-    //   console.log('released');
-    //   degrees = 90.0;
-    // }
     if (state === 'right') {
       console.log('pushed');
       degrees = 180.0;
