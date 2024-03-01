@@ -22,9 +22,7 @@ obniz.onconnect = async function () {
 //       }
 //   }, 1000);    //ループ間隔を1000ミリ秒 = 1秒に設定
 
-
   // スイッチの反応を常時監視
-  // 「スイッチ状態が変化した瞬間に1回だけ実行される」ことに注意しましょう
   obniz.switch.onchange = async function (state) {
     if (state === 'right') {
       console.log('pushed');
